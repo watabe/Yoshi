@@ -23,7 +23,7 @@ def on_click(x, y, button, pressed):
             SCREENSHOT_SIZE_WIDTH,
             SCREENSHOT_SIZE_HEIGHT))
         screenshot.save(SCREENSHOT_PREFIX +
-		    str(screenshot_count) + SCREENSHOT_SUFFIX)
+		    str(screenshot_count).zfill(3) + SCREENSHOT_SUFFIX)
 
         screenshot_count+=1
 
